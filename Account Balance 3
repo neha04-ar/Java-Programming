@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+          Scanner sc= new Scanner(System.in);
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        switch (b) {
+            case 1:
+                int da= sc.nextInt();
+                a+= da;
+                System.out.println(a);
+                break;
+
+            case 2:
+                int wa= sc.nextInt();
+                if (wa > a) {
+                    System.out.println("Insufficient Balance");
+                } else {
+                    a-= wa;
+                    System.out.println(a);
+                }
+                break;
+
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
